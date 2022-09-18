@@ -1,0 +1,105 @@
+:root {
+
+    --primary-color: #6200ee;
+    --secondary-color: #000;
+    --tertiary-color: #fff;
+
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+main{
+    background-color: hsla(0, 0%, 100%, 0);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    color: var(--tertiary-color);
+    margin-top: 150px;
+    background-image: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+
+}
+
+h1 {
+    margin-bottom: 0;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    color: var(--tertiary-color);
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+/* Estilização do Cubo */
+
+.casa{
+    border: 1px solid var(--tertiary-color);
+    width: 150px;
+    height: 150px;
+    font-size: 80px;
+    text-align: center;
+    line-height: 150px;
+}
+
+#casa01 {
+    border-radius: 1.2rem 0 0 0;
+}
+
+#casa09 {
+    border-radius: 0 0 1.2rem 0;
+}
+
+.linha{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+}
+
+
+/* Estilização do Placar */
+
+.placar {
+    display: flex;
+    background-color: var(--primary-color);
+    position: absolute;
+    width: 450px;
+    margin-top: 20px;
+    border-radius: 1.2rem 0 1.2rem 0;
+    background-image: linear-gradient(to right bottom, var(--primary-color), var(--secondary-color));
+}
+
+.col {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* Estilização do Botão Zerar Placar */
+
+
+#zerarJogo {
+    margin-top: 18rem;
+    margin-left: 15rem;
+
+    width: 15rem;
+    height: 6rem;
+
+    background-image: linear-gradient(to right bottom, var(--primary-color), var(--secondary-color));
+    border: none;
+    border-radius: 1.2rem 0 1.2rem 0;
+    transition: background-image 1s;
+}
+
+#zerarJogo:hover {
+    background-image: linear-gradient(to right bottom, var(--primary-color), var(--tertiary-color));
+}
